@@ -1,0 +1,346 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PortFolio Website</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/3eb449ff61.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <div id="header">
+        <div class="container">
+            <nav>
+                <h1 id="logo">Prashant.</h1>
+                <ul id="sidemenu">
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <i class="fas fa-times" onclick="closemenu()"></i>
+                </ul>
+                <i class="fas fa-bars" onclick="openmenu()"></i>
+            </nav>
+
+            <div class="header-text">
+                <p>Software Developer</p>
+                <h1>Hi, I'm <span>Prashant</span><br> From Delhi NCR</h1>
+            </div>
+        </div>
+    </div>
+
+
+    <!---------About---------->
+
+
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="images/pexels-tucă-bianca-848117.jpg" alt="">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="subtitle">About Me</h1>
+                    <p>
+                        "I'm a passionate software developer with over 3 years of experience, dedicated to delivering
+                        end-to-end solutions that seamlessly transition from development to deployment. My expertise
+                        spans a wide range of technologies and platforms, including mobile app development for Android
+                        and iOS using Flutter and native frameworks. Additionally, I excel in web development, crafting
+                        responsive and intuitive interfaces with technologies like React and Node.js.
+
+                        I thrive in collaborative environments and have a strong grasp of Agile methodologies like
+                        Scrum, utilizing tools such as Jira and GitLab for efficient project management. With a keen eye
+                        for detail and a commitment to quality, I specialize in UI/UX design, ensuring that every
+                        product I develop exceeds user expectations.
+
+                        Moreover, I am well-versed in continuous integration and continuous deployment (CI/CD)
+                        pipelines, leveraging GitHub to automate the deployment process and streamline development
+                        workflows. From concept to deployment, I'm dedicated to driving projects forward and delivering
+                        innovative solutions that make a lasting impact."
+                    </p>
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                        <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                        <p class="tab-links" onclick="opentab('education')">Education</p>
+                    </div>
+                    <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <li>App Development <span><br>Building Android and iOS Applications</span></li>
+                            <li>Web Development <span><br>Developing Web Applications</span></li>
+                            <li>Backend Development <span><br>Creating robust and scalable server-side logic and
+                                    databases for web and mobile applications</span></li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="experience">
+                        <ul>
+                            <li><span>2024</span><br>Senior Software Developer at <a
+                                    href="https://softwaremathematics.com">Software Mathematics</a></li>
+                            <li><span>2022 - 2023</span><br>Software Developer at <a
+                                    href="https://www.stockdaddy.in">Stock Daddy</a></li>
+                            <li><span>2021</span><br>Software Developer at <a
+                                    href="https://www.businessarena.com">Business Arena</a></li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="education">
+                        <ul>
+                            <li><span>2019-2021</span><br>MCA</li>
+                            <li><span>2016-2019</span><br>BCA</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-------------------Services---------------->
+
+    <div id="services">
+        <div class="container">
+            <h1 class="sub-title">My Services</h1>
+            <div class="services-list">
+                <div>
+                    <i class="fa-solid fa-code"></i>
+                    <h2>App Development</h2>
+                    <p>Whether it's creating native mobile applications for iOS and Android or developing cross-platform
+                        solutions with frameworks like Flutter, I specialize in turning your app ideas into reality.</p>
+                    <a href="app_development.html">learn more</a>
+                </div>
+                <div>
+                    <i class="fa-solid fa-crop"></i>
+                    <h2>Web Development</h2>
+                    <p>From designing and developing responsive websites to building scalable web applications, I
+                        provide comprehensive web development services tailored to your needs.</p>
+                    <a href="web_development.html">learn more</a>
+                </div>
+                <div>
+                    <i class="fa-brands fa-app-store-ios"></i>
+                    <h2>Backend Development</h2>
+                    <p>With expertise in server-side programming and database management, I build robust backend systems
+                        that power your applications, ensuring seamless performance and reliability.</p>
+                    <a href="backend_development.html">learn more</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!------------------------Poftfolio-------------------->
+
+    <div id="portfolio">
+        <div class="container">
+            <h1 class="sub-title">My Work</h1>
+            <div class="work-list">
+                <div class="work">
+                    <img src="images/work-1.png" alt="">
+                    <div class="layer">
+                        <h3>Stock Daddy App</h3>
+                        <p>Stock Daddy is your go-to app for stock market learning and trading. Whether you're new to
+                            investing or an experienced trader, we've got you covered with:</p>
+                        <a
+                            href="https://play.google.com/store/apps/details?id=com.easemytrades.stockdaddy&hl=en_IN&gl=US"><i
+                                class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="images/work-2.png" alt="">
+                    <div class="layer">
+                        <h3>Stock Daddy Website</h3>
+                        <p>"Stock Daddy Website" is an edtech app designed to educate users about stock market trading.
+                            It offers a user-friendly interface with comprehensive resources, including articles,
+                            tutorials, and market updates. Whether you're a beginner or an experienced investor, Stock
+                            Daddy helps you enhance your knowledge and skills in stock trading.</p>
+                        <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="images/work-3.png" alt="">
+                    <div class="layer">
+                        <h3>Lindera Mobile App</h3>
+                        <p>"Lindera Mobile App," a German-based mobility analysis tool for healthcare, assesses mobility
+                            and generates reports to enhance patient care.
+                        </p>
+                        <a href="https://play.google.com/store/apps/details?id=com.linderaredux&hl=en_IN&gl=US"><i
+                                class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="images/lindera_website.jpeg" alt="" height="110%">
+                    <div class="layer">
+                        <h3>Lindera Website</h3>
+                        <p>"Lindera Website" is the online platform showcasing Lindera Mobile App, a German-based
+                            healthcare tool analyzing mobility and improving patient care. Explore our site to discover
+                            how Lindera enhances healthcare practices.
+                        </p>
+                        <a href="https://lindera.de/en/"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="images/stockdaddy_social.jpeg" alt="" style="height: 110%;">
+                    <div class="layer">
+                        <h3>Stock Daddy Social</h3>
+                        <p>"Stock Daddy Social" is a trader-focused social media app where users share news and insights
+                            on the stock market, create groups, and connect with fellow traders. Join the community and
+                            stay informed!
+                        </p>
+                        <a href="https://www.stockdaddy.in/login?redirect=/community"><i
+                                class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="images/glitchh_social_media.jpeg" alt="" style="height: 110%;">
+                    <div class="layer">
+                        <h3>Glitch Social Media</h3>
+                        <p>"Glitch Social Media" is a gaming-focused platform where users connect, complete missions,
+                            and earn rewards. Join the community and level up your gaming experience!
+                        </p>
+                        <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="images/koko_bliss.jpeg" alt="" style="height: 100%;">
+                    <div class="layer">
+                        <h3>Koko bliss permanent makeup website</h3>
+                        <p>"Koko Bliss" offers permanent makeup services in France. Lindera Mobile App enhances patient
+                            care with mobility analysis. Explore our site for more!
+                        </p>
+                        <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="images/glitchh_ecommerce.jpeg" alt="" style="height: 100%;">
+                    <div class="layer">
+                        <h3>Glitchh E-commerce</h3>
+                        <p>"Glitchh E-commerce" is your go-to destination for gaming-related products. Lindera Mobile
+                            App, a German-based healthcare tool, enhances patient care through mobility analysis.
+                            Explore our site for all things gaming!
+                        </p>
+                        <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+            </div>
+            <a href="#" class="btn">See more</a>
+        </div>
+    </div>
+
+    <!--------------------------Testimonial---------------------->
+
+    <div id="testimonials">
+        <div class="container">
+            <h1 class="sub-title">Testimonials</h1>
+            <div class="testimonial-list">
+                <div class="testimonial">
+                    <div class="testimonial-content">
+                        <img src="images/testimonial-1.jpg" alt="Testimonial 1" class="testimonial-image">
+                        <p class="quote">"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus nec
+                            condimentum odio. Nulla fermentum turpis nec suscipit congue."</p>
+                        <p class="author">- John Doe</p>
+                    </div>
+                </div>
+                <div class="testimonial">
+                    <div class="testimonial-content">
+                        <img src="images/phone-background.png" alt="Testimonial 2" class="testimonial-image">
+                        <p class="quote">"Integer placerat nisl eu nibh lobortis, vitae cursus nunc aliquet. Nam
+                            suscipit interdum nisi, vel varius libero pharetra non."</p>
+                        <p class="author">- Jane Doe</p>
+                    </div>
+                </div>
+                <!-- Add more testimonials as needed -->
+            </div>
+            <button class="prev" onclick="moveSlide(-1)">&#10094;</button>
+            <button class="next" onclick="moveSlide(1)">&#10095;</button>
+        </div>
+    </div>
+
+
+    <!--------------------------Contact------------------------->
+
+    <div id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="contact-left">
+                    <h1 class="sub-title">Contact Me</h1>
+                    <p><i class="fa-solid fa-envelope"></i>abc@gmail.com</p>
+                    <p><i class="fa-solid fa-phone"></i>123456789</p>
+                    <div class="social-icons">
+                        <a href=""><i class="fa-brands fa-facebook"></i></a>
+                        <a href=""><i class="fa-brands fa-twitter-square"></i></a>
+                        <a href=""><i class="fa-brands fa-instagram"></i></a>
+                        <a href=""><i class="fa-brands fa-linkedin"></i></a>
+                    </div>
+                    <a href="" class="btn btn2">DownLoad CV</a>
+                </div>
+                <div class="contact-right">
+                    <form>
+                        <input type="text" name="Name" placeholder="Your Name" required>
+                        <input type="email" name="email" placeholder="Your Email" required>
+                        <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                        <button type="submit" class="btn btn2">Submit</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <div class="copyright">Copyright © Prashant. Made with <i class="fa-solid fa-heart"></i></div>
+    </div>
+    <script>
+        // Get the tab links and tab contents
+        var tablinks = document.querySelectorAll(".tab-links");
+        var tabcontents = document.querySelectorAll(".tab-contents");
+
+        // Function to open the specified tab
+        function opentab(tabname) {
+            // Remove the 'active-link' class from all tab links
+            tablinks.forEach(link => {
+                link.classList.remove("active-link");
+            });
+
+            // Remove the 'active-tab' class from all tab contents
+            tabcontents.forEach(content => {
+                content.classList.remove("active-tab");
+            });
+
+            // Add the 'active-link' class to the clicked tab link
+            event.currentTarget.classList.add("active-link");
+
+            // Add the 'active-tab' class to the corresponding tab content
+            document.getElementById(tabname).classList.add("active-tab");
+        }
+    </script>
+
+    <script>
+        var sidemenu = document.getElementById("sidemenu");
+        function openmenu() {
+            sidemenu.style.right = "0";
+        }
+        function closemenu() {
+            sidemenu.style.right = "-200px"
+        }
+    </script>
+    <script>
+        let slideIndex = 1;
+
+        function moveSlide(n) {
+            showSlides(slideIndex += n);
+        }
+
+        function showSlides(n) {
+            let i;
+            const slides = document.getElementsByClassName("testimonial");
+            if (n > slides.length) {
+                slideIndex = 1;
+            }
+            if (n < 1) {
+                slideIndex = slides.length;
+            }
+            for (i = 0; i < slides.length; i++) {
+                slides[i].style.display = "none";
+            }
+            slides[slideIndex - 1].style.display = "block";
+        }
+
+    </script>
+
+
+</body>
+
+</html>

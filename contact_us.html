@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us</title>
+    <!-- Link to your existing CSS file -->
+    <link rel="stylesheet" href="contact_us.css">
+    <!-- Font Awesome icon library -->
+    <script src="https://kit.fontawesome.com/3eb449ff61.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <!-- Contact Us Section -->
+    <div id="contact-us">
+        <div class="container">
+            <h1 class="sub-title">Contact Us</h1>
+            <div class="contact-form">
+                <form action="submit_form.php" method="POST" enctype="multipart/form-data">
+                    <input type="text" name="name" placeholder="Your Name" required>
+                    <input type="email" name="email" placeholder="Your Email" required>
+                    <input type="tel" name="phone" placeholder="Your Phone Number" required>
+                    <input type="text" name="company" placeholder="Your Company">
+                    <textarea name="project" rows="6" placeholder="Tell us about your project"></textarea>
+                    <input type="file" name="file" accept=".doc,.docx,.pdf">
+                    <button type="submit" class="btn">Submit</button>
+                    <button type="submit" class="btn">Submit</button>
+                </form>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

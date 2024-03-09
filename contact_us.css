@@ -1,0 +1,43 @@
+/* Contact Form */
+
+.contact-form {
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.contact-form input[type="text"],
+.contact-form input[type="email"],
+.contact-form input[type="tel"],
+.contact-form textarea {
+    width: 100%;
+    padding: 15px;
+    margin-bottom: 20px;
+    border: none;
+    border-radius: 6px;
+    background-color: #262626; /* Dark background color */
+    color: #fff; /* Text color */
+    font-size: 18px;
+}
+
+.contact-form textarea {
+    resize: vertical;
+}
+
+.contact-form input[type="file"] {
+    display: block;
+    margin-bottom: 20px;
+}
+
+.contact-form input[type="submit"] {
+    background-color: #ff004f; /* Button background color */
+    color: #fff; /* Button text color */
+    padding: 15px 30px;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.contact-form input[type="submit"]:hover {
+    background-color: #d90045; /* Darker shade of button background color on hover */
+}
