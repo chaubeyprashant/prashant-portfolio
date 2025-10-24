@@ -177,11 +177,11 @@ const Home = () => {
                                 <p>"Glitch Social Media" is a gaming-focused platform where users connect, complete missions,
                                     and earn rewards. Join the community and level up your gaming experience!
                                 </p>
-                                <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                                <a href="#!"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
                             </div>
                         </div>
                     </div>
-                    <a href="#" class="btn">See more</a>
+                    <a href="#!" class="btn">See more</a>
                 </div>
             </div>
             <div id="testimonial">

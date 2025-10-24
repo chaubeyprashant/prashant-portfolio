@@ -28,11 +28,11 @@ const ContactUs = () => {
                         <p><i class="fa-solid fa-phone"></i>7869861631</p>
                         <div class="social-icons">
                             <a href="https://github.com/chaubeyprashant"><i class="fa-brands fa-square-github"></i></a>
-                            <a href=""><i class="fa-brands fa-twitter-square"></i></a>
+                            <a href="#!"><i class="fa-brands fa-twitter-square"></i></a>
                             <a href="https://www.instagram.com/chaubey_1/"><i class="fa-brands fa-instagram"></i></a>
                             <a href="https://www.linkedin.com/in/prashant-chaubey-24a62116b/"><i class="fa-brands fa-linkedin"></i></a>
                         </div>
-                        <a href="" class="btn btn2">DownLoad CV</a>
+                        <a href="#!" class="btn btn2">DownLoad CV</a>
                     </div>
                     <div class="contact-right">
                         <form name="submit-to-google-sheet" onSubmit={handleSubmit}>
