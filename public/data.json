@@ -1,0 +1,35 @@
+{
+    "work": [
+      {
+        "title": "Website Redesign",
+        "description": "Redesigned the company website for improved UX and SEO optimization.",
+        "image": "assets/images/work1.jpg",
+        "link": "https://example.com/project1",
+        "tags": ["UI/UX", "SEO", "Web Development"],
+        "date": "2024-04"
+      },
+      {
+        "title": "E-commerce App",
+        "description": "Developed a cross-platform e-commerce app with Flutter and Firebase.",
+        "image": "assets/images/work2.jpg",
+        "link": "https://example.com/project2",
+        "tags": ["Flutter", "Firebase", "Mobile App"],
+        "date": "2024-02"
+      }
+    ],
+    "testimonials": [
+      {
+        "name": "John Doe",
+        "role": "CEO, TechCorp",
+        "message": "Prashant did an amazing job redesigning our site. The user engagement improved by 40% within the first month.",
+        "image": "assets/images/testimonial1.jpg"
+      },
+      {
+        "name": "Sarah Lee",
+        "role": "Founder, ShopEasy",
+        "message": "Highly professional and skilled. The e-commerce app exceeded our expectations.",
+        "image": "assets/images/testimonial2.jpg"
+      }
+    ]
+  }
+  
