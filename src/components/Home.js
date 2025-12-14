@@ -54,13 +54,13 @@ const Home = () => {
 
     // Refs for scroll animations
     const aboutRef = useRef(null);
-    const servicesRef = useRef(null);
     const portfolioRef = useRef(null);
     const testimonialRef = useRef(null);
     
     const aboutInView = useInView(aboutRef, { once: true, amount: 0.3 });
-    const servicesInView = useInView(servicesRef, { once: true, amount: 0.3 });
-    const portfolioInView = useInView(portfolioRef, { once: true, amount: 0.3 });
+    // NOTE: Portfolio section was getting stuck invisible on some setups when relying on IntersectionObserver.
+    // Keep it always visible/animated to avoid "My Work" not showing up.
+    const portfolioInView = true;
     const testimonialInView = useInView(testimonialRef, { once: true, amount: 0.3 });
 
     return (
@@ -217,83 +217,70 @@ const Home = () => {
                     </div>
                 </div>
             </motion.div>
-            <motion.div 
+            <motion.div
                 id="services"
-                ref={servicesRef}
                 initial="hidden"
-                animate={servicesInView ? "visible" : "hidden"}
+                whileInView="visible"
+                viewport={{ once: true, amount: 0.2 }}
+                variants={staggerContainer}
             >
-                <div class="container">
+                <div className="container">
                     <motion.h1 
-                        class="sub-title"
+                        className="sub-title"
                         variants={fadeInUp}
-                        initial="hidden"
-                        animate={servicesInView ? "visible" : "hidden"}
                     >
                         My Services
                     </motion.h1>
                     <motion.div 
-                        class="services-list"
+                        className="services-list"
                         variants={staggerContainer}
-                        initial="hidden"
-                        animate={servicesInView ? "visible" : "hidden"}
                     >
                         <motion.div
                             variants={scaleIn}
-                            initial="hidden"
-                            animate={servicesInView ? "visible" : "hidden"}
                             whileHover={{ scale: 1.05, y: -10 }}
                             transition={{ type: "spring", stiffness: 300 }}
                         >
-                            <i class="fa-solid fa-code"></i>
+                            <i className="fa-solid fa-code"></i>
                             <h2>App Development</h2>
                             <p>Building high-performance mobile applications for iOS and Android using Flutter and native frameworks. I focus on creating seamless, scalable, and visually appealing user experiences from concept to deployment.</p>
                         </motion.div>
 
                         <motion.div
                             variants={scaleIn}
-                            initial="hidden"
-                            animate={servicesInView ? "visible" : "hidden"}
                             whileHover={{ scale: 1.05, y: -10 }}
                             transition={{ type: "spring", stiffness: 300 }}
                         >
-                            <i class="fa-solid fa-crop"></i>
+                            <i className="fa-solid fa-crop"></i>
                             <h2>Web Development</h2>
                             <p>Developing modern, responsive, and high-performing web applications using React, Next.js, and Node.js. I ensure smooth front-end to back-end integration with a strong focus on speed, accessibility, and user engagement.</p>
                         </motion.div>
 
                         <motion.div
                             variants={scaleIn}
-                            initial="hidden"
-                            animate={servicesInView ? "visible" : "hidden"}
                             whileHover={{ scale: 1.05, y: -10 }}
                             transition={{ type: "spring", stiffness: 300 }}
                         >
-                            <i class="fa-brands fa-app-store-ios"></i>
+                            <i className="fa-brands fa-app-store-ios"></i>
                             <h2>Backend Development & AI Integration</h2>
                             <p>Designing secure and scalable backend architectures with RESTful APIs, microservices, and databases. I also integrate AI agents, RAG (Retrieval-Augmented Generation) pipelines, and vector databases like Pinecone and FAISS to deliver intelligent, data-driven systems.</p>
                         </motion.div>
 
                         <motion.div
                             variants={scaleIn}
-                            initial="hidden"
-                            animate={servicesInView ? "visible" : "hidden"}
                             whileHover={{ scale: 1.05, y: -10 }}
                             transition={{ type: "spring", stiffness: 300 }}
                         >
-                            <i class="fa-solid fa-robot"></i>
+                            <i className="fa-solid fa-robot"></i>
                             <h2>AI Workflows & AI Agents</h2>
                             <p>Creating end-to-end AI workflows and AI agents from development to deployment. I build intelligent automation systems, custom AI agents, and production-ready AI solutions that handle complex workflows, decision-making, and autonomous operations using LLMs, RAG pipelines, and advanced AI architectures.</p>
                         </motion.div>
 
                         <motion.div
                             variants={scaleIn}
-                            initial="hidden"
-                            animate={servicesInView ? "visible" : "hidden"}
                             whileHover={{ scale: 1.05, y: -10 }}
                             transition={{ type: "spring", stiffness: 300 }}
                         >
-                            <i class="fa-solid fa-cloud"></i>
+                            <i className="fa-solid fa-cloud"></i>
                             <h2>Cloud & DevOps</h2>
                             <p>Implementing automated CI/CD pipelines, containerized environments, and cloud deployments using Docker, Kubernetes, AWS, and Google Cloud. I ensure smooth development workflows and scalable, reliable production systems.</p>
                         </motion.div>
