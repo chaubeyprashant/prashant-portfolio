@@ -322,140 +322,455 @@ const Home = () => {
                         animate={portfolioInView ? "visible" : "hidden"}
                     >
                         <motion.div 
-                            class="work"
+                            class="work-card"
                             variants={scaleIn}
                             initial="hidden"
                             animate={portfolioInView ? "visible" : "hidden"}
-                            whileHover={{ scale: 1.03 }}
+                            whileHover={{ y: -10, scale: 1.02 }}
                             transition={{ type: "spring", stiffness: 300 }}
                         >
-                            <img src="images/work-1.png" alt="" />
-                            <div class="layer">
-                                <h3>Lindera Mobile App</h3>
-                                <p>"Lindera Mobile App," a German-based mobility analysis tool for healthcare, assesses mobility
-                                    and generates reports to enhance patient care.
-                                </p>
-                                <a href="https://play.google.com/store/apps/details?id=com.linderaredux&hl=en_IN&gl=US"><i
-                                    class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                            <div class="work-icon">
+                                <i class="fa-solid fa-mobile-screen-button"></i>
                             </div>
+                            <h3>Lindera Mobile App</h3>
+                            <p class="work-description">A German-based mobility analysis tool for healthcare that assesses mobility and generates reports to enhance patient care.</p>
+                            <div class="work-tags">
+                                <span class="work-tag">Healthcare</span>
+                                <span class="work-tag">Android</span>
+                            </div>
+                            <a href="https://play.google.com/store/apps/details?id=com.linderaredux&hl=en_IN&gl=US" class="work-link" target="_blank" rel="noopener noreferrer">
+                                View Project <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                            </a>
                         </motion.div>
                         <motion.div 
-                            class="work"
+                            class="work-card"
                             variants={scaleIn}
                             initial="hidden"
                             animate={portfolioInView ? "visible" : "hidden"}
-                            whileHover={{ scale: 1.03 }}
+                            whileHover={{ y: -10, scale: 1.02 }}
                             transition={{ type: "spring", stiffness: 300 }}
                         >
-                            <img src="images/work-2.png" alt="" />
-                            <div class="layer">
-                                <h3>LTech Challenge App</h3>
-                                <p>Are you a Yoga Star? A Fitness Freak? Find out with the LTech Challenge app! Powered by Lindera's AI, this app measures your performance in fitness and yoga challenges, showcasing the capabilities of the Lindera SDK.</p>
-                                <a href="https://play.google.com/store/apps/details?id=com.linderaredux&hl=en_IN&gl=US"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                            <div class="work-icon">
+                                <i class="fa-solid fa-dumbbell"></i>
                             </div>
+                            <h3>LTech Challenge App</h3>
+                            <p class="work-description">Powered by Lindera's AI, this app measures your performance in fitness and yoga challenges, showcasing the capabilities of the Lindera SDK.</p>
+                            <div class="work-tags">
+                                <span class="work-tag">Fitness</span>
+                                <span class="work-tag">AI</span>
+                                <span class="work-tag">Android</span>
+                            </div>
+                            <a href="https://play.google.com/store/apps/details?id=com.linderaredux&hl=en_IN&gl=US" class="work-link" target="_blank" rel="noopener noreferrer">
+                                View Project <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                            </a>
                         </motion.div>
                         <motion.div 
-                            class="work"
+                            class="work-card"
                             variants={scaleIn}
                             initial="hidden"
                             animate={portfolioInView ? "visible" : "hidden"}
-                            whileHover={{ scale: 1.03 }}
+                            whileHover={{ y: -10, scale: 1.02 }}
                             transition={{ type: "spring", stiffness: 300 }}
                         >
-                            <img src="images/work-3.png" alt="" />
-                            <div class="layer">
-                                <h3>Lindera Website</h3>
-                                <p>"Lindera Website" is the online platform showcasing Lindera Mobile App, a German-based
-                                    healthcare tool analyzing mobility and improving patient care. Explore our site to discover
-                                    how Lindera enhances healthcare practices.
-                                </p>
-                                <a href="https://lindera.de/en/"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                            <div class="work-icon">
+                                <i class="fa-solid fa-globe"></i>
                             </div>
+                            <h3>Lindera Website</h3>
+                            <p class="work-description">The online platform showcasing Lindera Mobile App, a German-based healthcare tool analyzing mobility and improving patient care.</p>
+                            <div class="work-tags">
+                                <span class="work-tag">Healthcare</span>
+                                <span class="work-tag">Web</span>
+                            </div>
+                            <a href="https://lindera.de/en/" class="work-link" target="_blank" rel="noopener noreferrer">
+                                View Project <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                            </a>
                         </motion.div>
                         <motion.div 
-                            class="work"
+                            class="work-card"
                             variants={scaleIn}
                             initial="hidden"
                             animate={portfolioInView ? "visible" : "hidden"}
-                            whileHover={{ scale: 1.03 }}
+                            whileHover={{ y: -10, scale: 1.02 }}
                             transition={{ type: "spring", stiffness: 300 }}
                         >
-                            <img src="images/glitchh_ecommerce.jpeg" alt="" />
-                            <div class="layer">
-                                <h3>Stock Daddy App</h3>
-                                <p>Stock Daddy is your go-to app for stock market learning and trading. Whether you're new to
-                                    investing or an experienced trader, we've got you covered with:</p>
-                                <a
-                                    href="https://play.google.com/store/apps/details?id=com.easemytrades.stockdaddy&hl=en_IN&gl=US"><i
-                                        class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                            <div class="work-icon">
+                                <i class="fa-solid fa-chart-line"></i>
                             </div>
+                            <h3>Stock Daddy App</h3>
+                            <p class="work-description">Your go-to app for stock market learning and trading. Complete stock market learning platform with courses from beginner to mastery level.</p>
+                            <div class="work-tags">
+                                <span class="work-tag">Finance</span>
+                                <span class="work-tag">Education</span>
+                                <span class="work-tag">Android</span>
+                            </div>
+                            <a href="https://play.google.com/store/apps/details?id=com.easemytrades.stockdaddy&hl=en_IN&gl=US" class="work-link" target="_blank" rel="noopener noreferrer">
+                                View Project <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                            </a>
                         </motion.div>
                         <motion.div 
-                            class="work"
+                            class="work-card"
                             variants={scaleIn}
                             initial="hidden"
                             animate={portfolioInView ? "visible" : "hidden"}
-                            whileHover={{ scale: 1.03 }}
+                            whileHover={{ y: -10, scale: 1.02 }}
                             transition={{ type: "spring", stiffness: 300 }}
                         >
-                            <img src="images/glitchh_social_media.jpeg" alt="" />
-                            <div class="layer">
-                                <h3>Stock Daddy Website</h3>
-                                <p>"Stock Daddy Website" is an educational platform for stock market trading, offering
-                                    user-friendly resources for all levels of investors.</p>
-                                <a href="https://www.stockdaddy.in/"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                            <div class="work-icon">
+                                <i class="fa-solid fa-graduation-cap"></i>
                             </div>
+                            <h3>Stock Daddy Website</h3>
+                            <p class="work-description">An educational platform for stock market trading, offering user-friendly resources for all levels of investors.</p>
+                            <div class="work-tags">
+                                <span class="work-tag">Finance</span>
+                                <span class="work-tag">Web</span>
+                                <span class="work-tag">Education</span>
+                            </div>
+                            <a href="https://www.stockdaddy.in/" class="work-link" target="_blank" rel="noopener noreferrer">
+                                View Project <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                            </a>
                         </motion.div>
                         <motion.div 
-                            class="work"
+                            class="work-card"
                             variants={scaleIn}
                             initial="hidden"
                             animate={portfolioInView ? "visible" : "hidden"}
-                            whileHover={{ scale: 1.03 }}
+                            whileHover={{ y: -10, scale: 1.02 }}
                             transition={{ type: "spring", stiffness: 300 }}
                         >
-                            <img src="images/stockdaddy_social.jpeg" alt="" />
-                            <div class="layer">
-                                <h3>Eyewa Online Eyewear Store</h3>
-                                <p>Eyewa is the largest online eyewear store in the Middle East, offering affordable, high-quality prescription glasses, sunglasses, blue light glasses, and contact lenses.</p>
-                                <a href="https://apps.apple.com/us/app/eyewa-eyewear-shopping-app/id1463605579"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                            <div class="work-icon">
+                                <i class="fa-solid fa-glasses"></i>
                             </div>
+                            <h3>Eyewa Online Eyewear Store</h3>
+                            <p class="work-description">The largest online eyewear store in the Middle East, offering affordable, high-quality prescription glasses, sunglasses, and contact lenses.</p>
+                            <div class="work-tags">
+                                <span class="work-tag">E-commerce</span>
+                                <span class="work-tag">iOS</span>
+                            </div>
+                            <a href="https://apps.apple.com/us/app/eyewa-eyewear-shopping-app/id1463605579" class="work-link" target="_blank" rel="noopener noreferrer">
+                                View Project <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                            </a>
                         </motion.div>
                         <motion.div 
-                            class="work"
+                            class="work-card"
                             variants={scaleIn}
                             initial="hidden"
                             animate={portfolioInView ? "visible" : "hidden"}
-                            whileHover={{ scale: 1.03 }}
+                            whileHover={{ y: -10, scale: 1.02 }}
                             transition={{ type: "spring", stiffness: 300 }}
                         >
-                            <img src="images/lindera_website.jpeg" alt="" />
-                            <div class="layer">
-                                <h3>Stock Daddy Social</h3>
-                                <p>"Stock Daddy Social" is a trader-focused social media app where users share news and insights
-                                    on the stock market, create groups, and connect with fellow traders. Join the community and
-                                    stay informed!
-                                </p>
-                                <a href="https://www.stockdaddy.in/login?redirect=/community"><i
-                                    class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                            <div class="work-icon">
+                                <i class="fa-solid fa-users"></i>
                             </div>
+                            <h3>Stock Daddy Social</h3>
+                            <p class="work-description">A trader-focused social media app where users share news and insights on the stock market, create groups, and connect with fellow traders.</p>
+                            <div class="work-tags">
+                                <span class="work-tag">Social</span>
+                                <span class="work-tag">Finance</span>
+                                <span class="work-tag">Web</span>
+                            </div>
+                            <a href="https://www.stockdaddy.in/login?redirect=/community" class="work-link" target="_blank" rel="noopener noreferrer">
+                                View Project <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                            </a>
                         </motion.div>
                         <motion.div 
-                            class="work"
+                            class="work-card"
                             variants={scaleIn}
                             initial="hidden"
                             animate={portfolioInView ? "visible" : "hidden"}
-                            whileHover={{ scale: 1.03 }}
+                            whileHover={{ y: -10, scale: 1.02 }}
                             transition={{ type: "spring", stiffness: 300 }}
                         >
-                            <img src="images/koko_bliss.jpeg" alt="" />
-                            <div class="layer">
-                                <h3>Glitch Social Media</h3>
-                                <p>"Glitch Social Media" is a gaming-focused platform where users connect, complete missions,
-                                    and earn rewards. Join the community and level up your gaming experience!
-                                </p>
-                                <a href="#!"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                            <div class="work-icon">
+                                <i class="fa-solid fa-gamepad"></i>
                             </div>
+                            <h3>Glitch Social Media</h3>
+                            <p class="work-description">A gaming-focused platform where users connect, complete missions, and earn rewards. Join the community and level up your gaming experience!</p>
+                            <div class="work-tags">
+                                <span class="work-tag">Gaming</span>
+                                <span class="work-tag">Social</span>
+                            </div>
+                            <a href="#!" class="work-link">
+                                View Project <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                            </a>
+                        </motion.div>
+                        <motion.div 
+                            class="work-card"
+                            variants={scaleIn}
+                            initial="hidden"
+                            animate={portfolioInView ? "visible" : "hidden"}
+                            whileHover={{ y: -10, scale: 1.02 }}
+                            transition={{ type: "spring", stiffness: 300 }}
+                        >
+                            <div class="work-icon">
+                                <i class="fa-solid fa-car"></i>
+                            </div>
+                            <h3>Tick - Car Wash Services</h3>
+                            <p class="work-description">A comprehensive car wash and automotive services app that connects users with professional car cleaning and maintenance services.</p>
+                            <div class="work-tags">
+                                <span class="work-tag">Service</span>
+                                <span class="work-tag">Web</span>
+                            </div>
+                            <a href="https://tick.ae/" class="work-link" target="_blank" rel="noopener noreferrer">
+                                View Project <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                            </a>
+                        </motion.div>
+                        <motion.div 
+                            class="work-card"
+                            variants={scaleIn}
+                            initial="hidden"
+                            animate={portfolioInView ? "visible" : "hidden"}
+                            whileHover={{ y: -10, scale: 1.02 }}
+                            transition={{ type: "spring", stiffness: 300 }}
+                        >
+                            <div class="work-icon">
+                                <i class="fa-solid fa-mobile-screen-button"></i>
+                            </div>
+                            <h3>Onoxy</h3>
+                            <p class="work-description">A modern mobile application designed to provide seamless user experiences with innovative features and intuitive design.</p>
+                            <div class="work-tags">
+                                <span class="work-tag">Mobile</span>
+                                <span class="work-tag">Android</span>
+                            </div>
+                            <a href="https://play.google.com/store/apps/details?id=com.onoxy.onoxy" class="work-link" target="_blank" rel="noopener noreferrer">
+                                View Project <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                            </a>
+                        </motion.div>
+                        <motion.div 
+                            class="work-card"
+                            variants={scaleIn}
+                            initial="hidden"
+                            animate={portfolioInView ? "visible" : "hidden"}
+                            whileHover={{ y: -10, scale: 1.02 }}
+                            transition={{ type: "spring", stiffness: 300 }}
+                        >
+                            <div class="work-icon">
+                                <i class="fa-solid fa-home"></i>
+                            </div>
+                            <h3>TBK Villas</h3>
+                            <p class="work-description">A premium property management platform offering luxury villa rentals and bookings. Explore beautiful properties and book your perfect vacation stay.</p>
+                            <div class="work-tags">
+                                <span class="work-tag">Real Estate</span>
+                                <span class="work-tag">Web</span>
+                            </div>
+                            <a href="https://tbkvillas.com" class="work-link" target="_blank" rel="noopener noreferrer">
+                                View Project <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                            </a>
+                        </motion.div>
+                        <motion.div 
+                            class="work-card"
+                            variants={scaleIn}
+                            initial="hidden"
+                            animate={portfolioInView ? "visible" : "hidden"}
+                            whileHover={{ y: -10, scale: 1.02 }}
+                            transition={{ type: "spring", stiffness: 300 }}
+                        >
+                            <div class="work-icon">
+                                <i class="fa-solid fa-plane"></i>
+                            </div>
+                            <h3>JLine Overseas</h3>
+                            <p class="work-description">A comprehensive platform for international education and migration services, helping students and professionals achieve their global aspirations.</p>
+                            <div class="work-tags">
+                                <span class="work-tag">Education</span>
+                                <span class="work-tag">Web</span>
+                            </div>
+                            <a href="https://jlineoverseas.com/" class="work-link" target="_blank" rel="noopener noreferrer">
+                                View Project <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                            </a>
+                        </motion.div>
+                        <motion.div 
+                            class="work-card"
+                            variants={scaleIn}
+                            initial="hidden"
+                            animate={portfolioInView ? "visible" : "hidden"}
+                            whileHover={{ y: -10, scale: 1.02 }}
+                            transition={{ type: "spring", stiffness: 300 }}
+                        >
+                            <div class="work-icon">
+                                <i class="fa-solid fa-briefcase"></i>
+                            </div>
+                            <h3>Wizer Pro</h3>
+                            <p class="work-description">A professional productivity and business management app designed to streamline workflows and enhance team collaboration for modern businesses.</p>
+                            <div class="work-tags">
+                                <span class="work-tag">Productivity</span>
+                                <span class="work-tag">iOS</span>
+                            </div>
+                            <a href="https://apps.apple.com/in/app/wizer-pro/id6502862651" class="work-link" target="_blank" rel="noopener noreferrer">
+                                View Project <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                            </a>
+                        </motion.div>
+                        <motion.div 
+                            class="work-card"
+                            variants={scaleIn}
+                            initial="hidden"
+                            animate={portfolioInView ? "visible" : "hidden"}
+                            whileHover={{ y: -10, scale: 1.02 }}
+                            transition={{ type: "spring", stiffness: 300 }}
+                        >
+                            <div class="work-icon">
+                                <i class="fa-brands fa-apple"></i>
+                            </div>
+                            <h3>Stock Daddy iOS App</h3>
+                            <p class="work-description">Complete stock market learning platform offering courses from beginner to mastery level, with interactive learning, live market updates, and expert analysis.</p>
+                            <div class="work-tags">
+                                <span class="work-tag">Finance</span>
+                                <span class="work-tag">iOS</span>
+                                <span class="work-tag">Education</span>
+                            </div>
+                            <a href="https://apps.apple.com/in/app/stockdaddy-stock-learning-app/id1589203494" class="work-link" target="_blank" rel="noopener noreferrer">
+                                View Project <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                            </a>
+                        </motion.div>
+                        <motion.div 
+                            class="work-card"
+                            variants={scaleIn}
+                            initial="hidden"
+                            animate={portfolioInView ? "visible" : "hidden"}
+                            whileHover={{ y: -10, scale: 1.02 }}
+                            transition={{ type: "spring", stiffness: 300 }}
+                        >
+                            <div class="work-icon">
+                                <i class="fa-brands fa-apple"></i>
+                            </div>
+                            <h3>Lindera iOS App</h3>
+                            <p class="work-description">Advanced mobility assessment tools for healthcare professionals, enabling detailed analysis and reporting for patient care.</p>
+                            <div class="work-tags">
+                                <span class="work-tag">Healthcare</span>
+                                <span class="work-tag">iOS</span>
+                            </div>
+                            <a href="https://apps.apple.com/de/app/lindera-mobility-analysis/id1323766047?l=en-GB" class="work-link" target="_blank" rel="noopener noreferrer">
+                                View Project <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                            </a>
+                        </motion.div>
+                        <motion.div 
+                            class="work-card"
+                            variants={scaleIn}
+                            initial="hidden"
+                            animate={portfolioInView ? "visible" : "hidden"}
+                            whileHover={{ y: -10, scale: 1.02 }}
+                            transition={{ type: "spring", stiffness: 300 }}
+                        >
+                            <div class="work-icon">
+                                <i class="fa-solid fa-dumbbell"></i>
+                            </div>
+                            <h3>LTech Challenge iOS</h3>
+                            <p class="work-description">Measures your performance in fitness and yoga challenges using Lindera's AI technology, helping you track and improve your physical activities.</p>
+                            <div class="work-tags">
+                                <span class="work-tag">Fitness</span>
+                                <span class="work-tag">AI</span>
+                                <span class="work-tag">Android</span>
+                            </div>
+                            <a href="https://play.google.com/store/apps/details?id=de.lindera.ltech.dr_tuschel_companion&hl=en_IN" class="work-link" target="_blank" rel="noopener noreferrer">
+                                View Project <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                            </a>
+                        </motion.div>
+                        <motion.div 
+                            class="work-card"
+                            variants={scaleIn}
+                            initial="hidden"
+                            animate={portfolioInView ? "visible" : "hidden"}
+                            whileHover={{ y: -10, scale: 1.02 }}
+                            transition={{ type: "spring", stiffness: 300 }}
+                        >
+                            <div class="work-icon">
+                                <i class="fa-brands fa-android"></i>
+                            </div>
+                            <h3>Eyewa Android App</h3>
+                            <p class="work-description">The largest online eyewear store in the Middle East, offering affordable prescription glasses, sunglasses, blue light glasses, and contact lenses.</p>
+                            <div class="work-tags">
+                                <span class="work-tag">E-commerce</span>
+                                <span class="work-tag">Android</span>
+                            </div>
+                            <a href="https://play.google.com/store/apps/details?id=com.eyewa.app&hl=en_IN" class="work-link" target="_blank" rel="noopener noreferrer">
+                                View Project <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                            </a>
+                        </motion.div>
+                        <motion.div 
+                            class="work-card"
+                            variants={scaleIn}
+                            initial="hidden"
+                            animate={portfolioInView ? "visible" : "hidden"}
+                            whileHover={{ y: -10, scale: 1.02 }}
+                            transition={{ type: "spring", stiffness: 300 }}
+                        >
+                            <div class="work-icon">
+                                <i class="fa-solid fa-heart-pulse"></i>
+                            </div>
+                            <h3>Care Health Customer App</h3>
+                            <p class="work-description">Comprehensive health insurance management, allowing users to manage policies, claims, and access healthcare services seamlessly.</p>
+                            <div class="work-tags">
+                                <span class="work-tag">Healthcare</span>
+                                <span class="work-tag">Insurance</span>
+                                <span class="work-tag">iOS</span>
+                            </div>
+                            <a href="https://apps.apple.com/in/app/care-health-customer-app/id1451697831" class="work-link" target="_blank" rel="noopener noreferrer">
+                                View Project <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                            </a>
+                        </motion.div>
+                        <motion.div 
+                            class="work-card"
+                            variants={scaleIn}
+                            initial="hidden"
+                            animate={portfolioInView ? "visible" : "hidden"}
+                            whileHover={{ y: -10, scale: 1.02 }}
+                            transition={{ type: "spring", stiffness: 300 }}
+                        >
+                            <div class="work-icon">
+                                <i class="fa-brands fa-android"></i>
+                            </div>
+                            <h3>Care Health Customer Android</h3>
+                            <p class="work-description">Manage health insurance policies, track claims, find network hospitals, and access customer support on the go.</p>
+                            <div class="work-tags">
+                                <span class="work-tag">Healthcare</span>
+                                <span class="work-tag">Insurance</span>
+                                <span class="work-tag">Android</span>
+                            </div>
+                            <a href="https://play.google.com/store/apps/details?id=com.religare.healthinsurance&hl=en_IN" class="work-link" target="_blank" rel="noopener noreferrer">
+                                View Project <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                            </a>
+                        </motion.div>
+                        <motion.div 
+                            class="work-card"
+                            variants={scaleIn}
+                            initial="hidden"
+                            animate={portfolioInView ? "visible" : "hidden"}
+                            whileHover={{ y: -10, scale: 1.02 }}
+                            transition={{ type: "spring", stiffness: 300 }}
+                        >
+                            <div class="work-icon">
+                                <i class="fa-solid fa-stethoscope"></i>
+                            </div>
+                            <h3>Care Health RX</h3>
+                            <p class="work-description">A digital healthcare platform that connects patients with healthcare providers, enabling telemedicine consultations, prescription management, and health tracking.</p>
+                            <div class="work-tags">
+                                <span class="work-tag">Healthcare</span>
+                                <span class="work-tag">Telemedicine</span>
+                                <span class="work-tag">iOS</span>
+                            </div>
+                            <a href="https://apps.apple.com/in/app/care-health-rx/id6741470116" class="work-link" target="_blank" rel="noopener noreferrer">
+                                View Project <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                            </a>
+                        </motion.div>
+                        <motion.div 
+                            class="work-card"
+                            variants={scaleIn}
+                            initial="hidden"
+                            animate={portfolioInView ? "visible" : "hidden"}
+                            whileHover={{ y: -10, scale: 1.02 }}
+                            transition={{ type: "spring", stiffness: 300 }}
+                        >
+                            <div class="work-icon">
+                                <i class="fa-brands fa-android"></i>
+                            </div>
+                            <h3>Care Health RX Android</h3>
+                            <p class="work-description">Provides telemedicine services, allowing users to consult with doctors, manage prescriptions, and access healthcare services from their mobile devices.</p>
+                            <div class="work-tags">
+                                <span class="work-tag">Healthcare</span>
+                                <span class="work-tag">Telemedicine</span>
+                                <span class="work-tag">Android</span>
+                            </div>
+                            <a href="https://play.google.com/store/apps/details?id=com.care.mediconnect&hl=en_IN" class="work-link" target="_blank" rel="noopener noreferrer">
+                                View Project <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                            </a>
                         </motion.div>
                     </motion.div>
                     <motion.a 

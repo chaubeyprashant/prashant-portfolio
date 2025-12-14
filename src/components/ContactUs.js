@@ -1,24 +1,53 @@
-import React, { useRef } from 'react';
+import React, { useRef, useState } from 'react';
 import { motion, useInView } from 'framer-motion';
 
 const ContactUs = () => {
-    const scriptURL = 'https://script.google.com/macros/s/AKfycbzYvF_K4eW_ezd_r2fNXOWiixTPnlDYOLFD2b3bCgxZPVCOIx4QVidyu-G-Iot-a7Z2_g/exec';
+    // Use production API URL if available, otherwise fallback to localhost for development
+    const API_URL = process.env.REACT_APP_API_URL || 
+        (process.env.NODE_ENV === 'production' 
+            ? 'https://your-backend-url.railway.app/api/contact/submit' // Replace with your actual backend URL
+            : 'http://localhost:5000/api/contact/submit');
     const contactRef = useRef(null);
     const contactInView = useInView(contactRef, { once: true, amount: 0.3 });
+    const [submitStatus, setSubmitStatus] = useState({ type: '', message: '' });
 
-    const handleSubmit = (e) => {
+    const handleSubmit = async (e) => {
         e.preventDefault();
         const form = e.target;
-        fetch(scriptURL, { method: 'POST', body: new FormData(form) })
-            .then(response => {
-                if (response.ok) {
-                    alert('Form submitted successfully!');
-                    form.reset();
-                } else {
-                    alert('An error occurred. Please try again later.');
-                }
-            })
-            .catch(error => console.error('Error!', error.message));
+        const formData = {
+            name: form.Name.value,
+            email: form.email.value,
+            phone: form.Phone.value,
+            message: form.Message.value || ''
+        };
+
+        setSubmitStatus({ type: 'loading', message: 'Submitting...' });
+
+        try {
+            const response = await fetch(API_URL, {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json',
+                },
+                body: JSON.stringify(formData)
+            });
+
+            const data = await response.json();
+
+            if (response.ok && data.success) {
+                setSubmitStatus({ type: 'success', message: data.message || 'Form submitted successfully!' });
+                form.reset();
+                // Clear success message after 5 seconds
+                setTimeout(() => {
+                    setSubmitStatus({ type: '', message: '' });
+                }, 5000);
+            } else {
+                setSubmitStatus({ type: 'error', message: data.message || 'An error occurred. Please try again later.' });
+            }
+        } catch (error) {
+            console.error('Error submitting form:', error);
+            setSubmitStatus({ type: 'error', message: 'Network error. Please check your connection and try again.' });
+        }
     };
 
     const fadeInLeft = {
@@ -172,7 +201,18 @@ const ContactUs = () => {
                                 Submit
                             </motion.button>
                         </motion.form>
-                        <span id="msg"></span>
+                        {submitStatus.message && (
+                            <motion.div
+                                initial={{ opacity: 0, y: 10 }}
+                                animate={{ opacity: 1, y: 0 }}
+                                className={`submit-message ${submitStatus.type}`}
+                            >
+                                {submitStatus.type === 'loading' && <i class="fa-solid fa-spinner fa-spin"></i>}
+                                {submitStatus.type === 'success' && <i class="fa-solid fa-check-circle"></i>}
+                                {submitStatus.type === 'error' && <i class="fa-solid fa-exclamation-circle"></i>}
+                                <span>{submitStatus.message}</span>
+                            </motion.div>
+                        )}
                     </motion.div>
                 </div>
             </div>
